@@ -70,16 +70,19 @@ const Login = () => {
                   />
                 </div>
                 <div className="text-center mb-3 ">
-                  <a href="/register" className="btn login_button">
+{/*                   <a href="/register" className="btn login_button">
                     Create an account
-                  </a>
+                  </a> */}
+<Link to="/register" className="btn login_button">
+                     Create an account
+                  </Link>
                 </div>
                 <div className="text-center">
-                  <a href="/forgot_password" className="fp_link">
+{/*                   <a href="/forgot_password" className="fp_link">
                     Forgot password?
-                  </a>
-                 <Link to="/register">
-                     Create an account
+                  </a> */}
+                 <Link to="/forgot_password" className="btn login_button">
+                    Forgot password?
                   </Link>
                 </div>
               </form>
