@@ -3,7 +3,7 @@ import { useMutation } from "@tanstack/react-query"
 import { toast } from "react-toastify"
 import { userLogin } from "../api/posts"
 import { useNavigate } from "react-router-dom"
-
+import { Link } from "react-router-dom"
 const Login = () => {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState("")
@@ -78,6 +78,9 @@ const Login = () => {
                   <a href="/forgot_password" className="fp_link">
                     Forgot password?
                   </a>
+                 <Link to="/register">
+                     Create an account
+                  </Link>
                 </div>
               </form>
             </div>
